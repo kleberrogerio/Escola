@@ -36,4 +36,10 @@ public class Aluno {
 	public void setTurma_id(String turma_id) {
 		this.turma_id = turma_id;
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [id=" + id + ", nome=" + nome + ", turma_id=" + turma_id + "]";
+	}
+	
 }
