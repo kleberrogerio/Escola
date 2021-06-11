@@ -17,7 +17,7 @@ public class EscolaController {
 	
 	@RequestMapping("/escola/form")
 	public String form() {
-		return "formEscola";
+		return "escola/formEscola";
 	}
 	
 	
@@ -25,7 +25,7 @@ public class EscolaController {
 	public String adicionar(Aluno aluno) {
 		System.out.println(aluno);
 		er.save(aluno);
-		return "escola-adicionado";
+		return "escola/escola-adicionado";
 	}
 
 }
